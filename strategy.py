@@ -46,7 +46,7 @@ for _ in range(num_rounds):
 
     bids_fp = [f(v, "first_price") for f, v in zip(strategy_funcs, values)]
     bids_sp = [f(v, "second_price") for f, v in zip(strategy_funcs, values)]
-    bids_ap = [f(v, "all_pay") for f, v in zip(strategy_funcs, values)]  # All-Pay 使用同样策略
+    bids_ap = [f(v, "all_pay") for f, v in zip(strategy_funcs, values)]  # All-Pay use the same strategy
 
     values_list.append(values)
     bids_fp_list.append(bids_fp)
