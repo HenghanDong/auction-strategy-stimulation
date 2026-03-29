@@ -87,9 +87,9 @@ for _, row in df.iterrows():
 
     for i, name in enumerate(strategy_names):
         if i == winner_ap:
-            profit_allpay[name].append(values[i] - bids_ap[i])  # 赢了
+            profit_allpay[name].append(values[i] - bids_ap[i])  # win
         else:
-            profit_allpay[name].append(-bids_ap[i])             # 输了也要付钱
+            profit_allpay[name].append(-bids_ap[i])             # lose but still have to pay
 
 
 print("Average Profit (First Price Auction):")
